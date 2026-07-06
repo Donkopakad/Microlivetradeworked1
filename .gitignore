@@ -1,9 +1,37 @@
+
+---
+
+## `.gitignore` ​:codex-file-citation[codex-file-citation]{line_range_start=1 line_range_end=28 path=.gitignore git_url="https://github.com/Donkopakad/Microlivetradeworked1/blob/main/.gitignore#L1-L28"}​
+
+```gitignore
+# Zig build outputs
 .zig-cache/*
 zig-out/*
-
 kernel.o
 simd.o
-
-.vscode
-
 massif.*
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local environment files with secrets
+.env
+.env.*
+!.env.example
+
+# Runtime trade/log outputs
+trade_history.csv
+*.log
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
+*.swp
